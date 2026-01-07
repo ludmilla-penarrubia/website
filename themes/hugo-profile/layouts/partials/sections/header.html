@@ -152,13 +152,13 @@
                     {{ if .HasChildren }}
                     <!-- Dropdown menu -->
                     <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ "/" | relURL }}{{ .URL | strings.TrimPrefix "/" }}" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ .URL | relURL }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
                             {{ .Name }}
                         </a>
                         <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
                             {{ range .Children }}
-                            <a class="dropdown-item text-center nav-link" href="{{ "/" | relURL }}{{ .URL | strings.TrimPrefix "/" }}"
+                            <a class="dropdown-item text-center nav-link" href="{{ .URL | relURL }}"
                                 title="{{ .Title }}">
                                 {{ .Name }}
                             </a>
@@ -168,7 +168,7 @@
                     {{else}}
                     <!-- Single menu item -->
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/" | relURL }}{{ .URL | strings.TrimPrefix "/" }}" title="{{ .Title }}">
+                        <a class="nav-link" href="{{ .URL | relURL }}" title="{{ .Title }}">
                             {{ .Pre }}
                             {{ .Name }}
                         </a>

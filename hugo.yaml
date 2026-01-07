@@ -44,11 +44,11 @@ Menus:
     - identifier: en
       name: En 🇬🇧
       weight: 1
-      url: /en/
+      url: en/
     - identifier: fr
       name: Fr 🇫🇷
       weight: 1
-      url: /fr/
+      url: fr/
     # - identifier: gallery
     #   name: Gallery
     #   title: Blog posts
