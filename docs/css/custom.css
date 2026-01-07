@@ -1,0 +1,11 @@
+.school-blue {
+    color: #4a90e2; /* muted blue */
+    font-weight: 500;
+}
+
+.school-blue a,
+.school-blue a:hover,
+.school-blue a:focus {
+    color: #4a90e2 !important;
+    text-decoration: none;
+}
