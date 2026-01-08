@@ -21,6 +21,7 @@
     }
 </script>
 
+
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
@@ -91,7 +92,7 @@
 
                     {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/"  | relURL }}#about" aria-label="about">
+                        <a class="nav-link" href="{{ "/#about" | relLangURL }}" aria-label="about">
                             {{ .Site.Params.about.title | default "About" }}
                         </a>
                     </li>
@@ -99,7 +100,7 @@
 
                     {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{"/" | relURL }}#experience"
+                        <a class="nav-link" href="{{"/#experience" | relLangURL }}"
                             aria-label="experience">
                             {{ .Site.Params.experience.title | default "Experience" }}
                         </a>
@@ -108,7 +109,7 @@
 
                     {{ if and (.Site.Params.education.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/" | relURL }}#education"
+                        <a class="nav-link" href="{{ "/#education" | relLangURL }}"
                             aria-label="education">
                             {{ .Site.Params.education.title | default "Education" }}
                         </a>
@@ -117,7 +118,7 @@
 
                     {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/" | relURL }}#projects"
+                        <a class="nav-link" href="{{ "/#projects" | relLangURL }}"
                             aria-label="projects">
                             {{ .Site.Params.projects.title | default "Projects" }}
                         </a>
@@ -126,7 +127,7 @@
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/" | relURL }}#achievements"
+                        <a class="nav-link" href="{{ "/#achievements" | relLangURL }}"
                             aria-label="achievements">
                             {{ .Site.Params.achievements.title | default "Achievements" }}
                         </a>
@@ -135,7 +136,7 @@
 
                     {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ "/" | relURL }}#contact"
+                        <a class="nav-link" href="{{ "/#contact" | relLangURL }}"
                             aria-label="contact">
                             {{ .Site.Params.contact.title | default "Contact" }}
                         </a>
@@ -152,13 +153,13 @@
                     {{ if .HasChildren }}
                     <!-- Dropdown menu -->
                     <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ .URL | relLangURL  }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
                             {{ .Name }}
                         </a>
                         <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
                             {{ range .Children }}
-                            <a class="dropdown-item text-center nav-link" href="{{ .URL | absURL }}"
+                            <a class="dropdown-item text-center nav-link" href="{{ .URL | relLangURL  }}"
                                 title="{{ .Title }}">
                                 {{ .Name }}
                             </a>
@@ -168,7 +169,7 @@
                     {{else}}
                     <!-- Single menu item -->
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .URL | absURL }}" title="{{ .Title }}">
+                        <a class="nav-link" href="{{ .URL | relLangURL  }}" title="{{ .Title }}">
                             {{ .Pre }}
                             {{ .Name }}
                         </a>
@@ -199,6 +200,21 @@
                         </div>
                     </li>
                     {{ end }}
+
+                    <!-- Toggle to switch between languages -->
+                    <li class="nav-item navbar-text">
+                        <div class="text-center">
+                            {{ if eq .Site.Language.Lang "fr" }}
+                                <a class="nav-link" href="{{ "/en/" | relURL }}" aria-label="Switch to English">
+                                    🇬🇧 
+                                </a>
+                            {{ else }}
+                                <a class="nav-link" href="{{ "/fr/" | relURL }}" aria-label="Passer en français">
+                                    🇫🇷
+                                </a>
+                            {{ end }}
+                        </div>
+                    </li>
 
                 </ul>
 
