@@ -34,8 +34,8 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
+# Menus:
+#   main:
     # - identifier: blog
     #   name: Blog
     #   title: Blog 
