@@ -479,9 +479,7 @@ languages:
           - title: Critical Care (2025)
             content: "Diagnostic performance of the recruitment-to-inflation ratio to assess lung recruitability by PEEP in ARDS: a computed tomography study"
             image: /images/projects/critic_care.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1186/s13054-025-05453-0
+            doi: https://doi.org/10.1186/s13054-025-05453-0
             badges:
               - Co-auteur
               - "Réanimation"
@@ -494,9 +492,7 @@ languages:
           - title: Intensive Care Medicine Experimental (2023)
             content: Precision of CT-derived alveolar recruitment assessed by human observers and a machine learning algorithm in moderate and severe ARDS
             image: /images/projects/intensive_care_med_exp.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1186/s40635-023-00495-6
+            doi : https://doi.org/10.1186/s40635-023-00495-6
             badges:
               - 1er auteur
               - "Réanimation"
@@ -505,9 +501,7 @@ languages:
           - title: Medical Physics (2022)
             content: Improving motion-mask segmentation in thoracic CT with multiplanar U-nets
             image: /images/projects/medical_physics.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1002/mp.15347
+            doi : https://doi.org/10.1002/mp.15347
             badges:
               - 1er auteur
               - "U-net"
@@ -516,9 +510,7 @@ languages:
           - title: Journal of Critcial Care (2020)
             content: "Quantitative-analysis of computed tomography in COVID-19 and non COVID-19 ARDS patients: A case-control study"
             image: /images/projects/journal_critic_care.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1016/j.jcrc.2020.08.006
+            doi : https://doi.org/10.1016/j.jcrc.2020.08.006
             badges:
               - Co-auteur
               - "Réanimation"
@@ -1006,9 +998,7 @@ languages:
           - title: Critical Care (2025)
             content: "Diagnostic performance of the recruitment-to-inflation ratio to assess lung recruitability by PEEP in ARDS: a computed tomography study"
             image: /images/projects/critic_care.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1186/s13054-025-05453-0
+            doi: https://doi.org/10.1186/s13054-025-05453-0
             badges:
               - Co-author
               - "Intensive Care"
@@ -1021,9 +1011,7 @@ languages:
           - title: Intensive Care Medicine Experimental (2023)
             content: Precision of CT-derived alveolar recruitment assessed by human observers and a machine learning algorithm in moderate and severe ARDS
             image: /images/projects/intensive_care_med_exp.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1186/s40635-023-00495-6
+            doi : https://doi.org/10.1186/s40635-023-00495-6
             badges:
               - 1st author
               - "Intensive Care"
@@ -1032,9 +1020,7 @@ languages:
           - title: Medical Physics (2022)
             content: Improving motion-mask segmentation in thoracic CT with multiplanar U-nets
             image: /images/projects/medical_physics.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1002/mp.15347
+            doi: https://doi.org/10.1002/mp.15347
             badges:
               - 1st author
               - "U-net"
@@ -1043,9 +1029,7 @@ languages:
           - title: Journal of Critcial Care (2020)
             content: "Quantitative-analysis of computed tomography in COVID-19 and non COVID-19 ARDS patients: A case-control study"
             image: /images/projects/journal_critic_care.png
-            featured:
-              name: DOI
-              link: https://doi.org/10.1016/j.jcrc.2020.08.006
+            doi : https://doi.org/10.1016/j.jcrc.2020.08.006
             badges:
               - Co-author
               - "Intensive Care"
