@@ -67,3 +67,22 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Make project cards clickable without link styling */
+.project-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card-link,
+.project-card-link * {
+    color: var(--text-color) !important; /* or var(--text-secondary-color) if preferred */
+    text-decoration: none !important;
+}
+
+
+.project-card-link .card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

@@ -440,6 +440,11 @@ header .navbar.animate {
     opacity: 0.9;
 }
 
+#education .card .card-body > a:hover,
+#education .card .card-body > a:hover * {
+    color: var(--text-link-color) !important;
+}
+
 #education .card .card-body > a h6 {
     display: inline-block;
     text-decoration: none;
