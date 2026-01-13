@@ -6,7 +6,7 @@
 
 #projects a {
     text-decoration: none;
-    color: var(--text-link-color) !important;
+    color: var(--text-color) !important;
 }
 
 #projects .badge {
@@ -85,4 +85,14 @@
 .project-card-link .card {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Featured button text color */
+.featured-btn {
+    color: var(--text-color) !important;        /* text color */ 
+}
+
+/* Hover state */
+.featured-btn:hover {
+    color: var(--primary-color) !important;
 }

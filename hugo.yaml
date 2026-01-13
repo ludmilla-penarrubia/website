@@ -480,6 +480,9 @@ languages:
             content: "Diagnostic performance of the recruitment-to-inflation ratio to assess lung recruitability by PEEP in ARDS: a computed tomography study"
             image: /images/projects/critic_care.png
             doi: https://doi.org/10.1186/s13054-025-05453-0
+            featured:
+              name: PDF
+              link: https://link.springer.com/content/pdf/10.1186/s13054-025-05453-0.pdf
             badges:
               - Co-auteur
               - "Réanimation"
@@ -493,6 +496,9 @@ languages:
             content: Precision of CT-derived alveolar recruitment assessed by human observers and a machine learning algorithm in moderate and severe ARDS
             image: /images/projects/intensive_care_med_exp.png
             doi : https://doi.org/10.1186/s40635-023-00495-6
+            featured:
+              name: PDF
+              link: https://link.springer.com/content/pdf/10.1186/s40635-023-00495-6.pdf
             badges:
               - 1er auteur
               - "Réanimation"
@@ -501,7 +507,10 @@ languages:
           - title: Medical Physics (2022)
             content: Improving motion-mask segmentation in thoracic CT with multiplanar U-nets
             image: /images/projects/medical_physics.png
-            doi : https://doi.org/10.1002/mp.15347
+            doi : https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.15347
+            featured:
+              name: PDF
+              link : https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/mp.15347
             badges:
               - 1er auteur
               - "U-net"
@@ -511,6 +520,9 @@ languages:
             content: "Quantitative-analysis of computed tomography in COVID-19 and non COVID-19 ARDS patients: A case-control study"
             image: /images/projects/journal_critic_care.png
             doi : https://doi.org/10.1016/j.jcrc.2020.08.006
+            featured:
+              name: PDF
+              link : https://doi.org/10.1016/j.jcrc.2020.08.006
             badges:
               - Co-auteur
               - "Réanimation"
@@ -569,7 +581,7 @@ languages:
       terms:
         read: "Read"
         toc: "Table Of Contents"
-        copyright: "All rights reserved"
+        copyright: "Tous droits réservés"
         pageNotFound: "Page not found"
         emailText: "Check out this site"
 
@@ -999,6 +1011,9 @@ languages:
             content: "Diagnostic performance of the recruitment-to-inflation ratio to assess lung recruitability by PEEP in ARDS: a computed tomography study"
             image: /images/projects/critic_care.png
             doi: https://doi.org/10.1186/s13054-025-05453-0
+            featured:
+              name: PDF
+              link: https://link.springer.com/content/pdf/10.1186/s13054-025-05453-0.pdf
             badges:
               - Co-author
               - "Intensive Care"
@@ -1012,6 +1027,9 @@ languages:
             content: Precision of CT-derived alveolar recruitment assessed by human observers and a machine learning algorithm in moderate and severe ARDS
             image: /images/projects/intensive_care_med_exp.png
             doi : https://doi.org/10.1186/s40635-023-00495-6
+            featured:
+              name: PDF
+              link: https://link.springer.com/content/pdf/10.1186/s40635-023-00495-6.pdf
             badges:
               - 1st author
               - "Intensive Care"
@@ -1020,7 +1038,10 @@ languages:
           - title: Medical Physics (2022)
             content: Improving motion-mask segmentation in thoracic CT with multiplanar U-nets
             image: /images/projects/medical_physics.png
-            doi: https://doi.org/10.1002/mp.15347
+            doi: https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.15347
+            featured:
+              name: PDF
+              link : https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/mp.15347
             badges:
               - 1st author
               - "U-net"
@@ -1030,6 +1051,9 @@ languages:
             content: "Quantitative-analysis of computed tomography in COVID-19 and non COVID-19 ARDS patients: A case-control study"
             image: /images/projects/journal_critic_care.png
             doi : https://doi.org/10.1016/j.jcrc.2020.08.006
+            featured:
+              name: PDF
+              link : https://doi.org/10.1016/j.jcrc.2020.08.006
             badges:
               - Co-author
               - "Intensive Care"
